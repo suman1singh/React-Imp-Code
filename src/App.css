@@ -6,6 +6,25 @@
   height: 40vmin;
   pointer-events: none;
 }
+.nvr{
+  text-align: right;
+  background-color:yellow
+}
+/* .nvr .active{
+  color: #61dafb;
+  background-color: bisque;
+}  */
+.nvr li {
+  display: inline-block;
+  padding: 10px 5px;
+}
+*{
+background-color: aqua;
+}
+.nvr-link{
+  text-decoration: dotted;
+  color: red;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
