@@ -14,7 +14,7 @@ export default class App15 extends Component {
       <div>
       <h1>Suman</h1>
          <Student15 data1={this.state.name} data2={this.state.DOB}/>
-         <button onClick={()=>this.setState({name:"Singh"})} >Change Name</button>
+         <button onClick={()=>this.setState({name:"Singh"})}  >Change Name</button>
          <button onClick={()=>this.setState({DOB:"Real DOB"})} >Change DOB</button>
       </div>
     )

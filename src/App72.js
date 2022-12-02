@@ -5,24 +5,23 @@ import Header from "./cmp72/Header";
 import Main from "./cmp72/Main";
 import UpdateButton from "./cmp72/UpdateButton";
 class App72 extends Component {
-    constructor(){
-        super()
-        this.updateColor=(color)=>{
-            this.setState({
-                color:color
-            })
-        }
-        this.state={
-            color:"green",
-            updateColor:this.updateColor
-        }
-       
-    }
+  constructor() {
+    super();
+    this.updateColor = (color) => {
+      this.setState({
+        color: color,
+      });
+    };
+    this.state = {
+      color: "green",
+      updateColor: this.updateColor,
+    };
+  }
   render() {
     return (
       <div>
         <commonContext.Provider value={this.state}>
-        <Header />
+          <Header />
           <h1>Complete and easy example for Context API</h1>
           <Main />
           <UpdateButton />
