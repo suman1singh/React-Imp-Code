@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 export default function App63() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState();
 
   // useEffect(() => {
   //   fetch("https://jsonplaceholder.typicode.com/users").then((res) => {
