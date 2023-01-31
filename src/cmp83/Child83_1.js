@@ -5,7 +5,7 @@ export default function Child83_1(props) {
   // React.useEffect(()=>{
   //     setData(myData)
   // },[]);
-  return (
+  return ( 
     <div>
       <h1>Child1 Component</h1>
       <br />
