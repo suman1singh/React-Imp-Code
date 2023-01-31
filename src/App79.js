@@ -15,10 +15,10 @@ class App79 extends Component {
     };
   }
   render() {
-    let persons = this.state.persons.map((p,i) => {
+    let person = this.state.persons.map((p,i) => {
       return <Person79 key={i} data={p}/>;
     });
-    return <div>{persons}</div>;
+    return <div>{person}</div>;
   }
 }
 
