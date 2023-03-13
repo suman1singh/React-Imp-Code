@@ -5,8 +5,8 @@ export default function App31() {
   const [data, setData] = useState(5);
   const [count, setCount] = useState(10);
   useEffect(() => {
-    alert("New count is" + count);
-  }, [data,count]);
+    console.log("New count is" + count);
+  }, [data, count]);
 
   return (
     <div>

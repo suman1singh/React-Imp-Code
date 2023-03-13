@@ -27,7 +27,7 @@ export default function App34() {
           </tr>
           {employee.map((i, m) => (
             <tr key={m}>
-             <User37 data={i}/>
+             <User37 data={i} data2={m}/>
             </tr>
           ))}
         </tbody>
