@@ -1,3 +1,4 @@
+//Progressbar that will increase 10% after every 1 sec
 import React from "react";
 
 export default function App200() {
