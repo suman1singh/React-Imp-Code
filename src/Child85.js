@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-function Child85(Learning, count) {
+function Child85({ item, myFunc }) {
   console.log("child component");
   return (
     <div>
