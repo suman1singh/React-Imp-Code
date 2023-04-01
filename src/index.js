@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App210 from "./App210";
+import App85 from "./App85";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from "./reportWebVitals";
@@ -16,7 +16,7 @@ root.render(
     {/* <Provider store={store}>
       <App16 />
     </Provider> */}
-    <App210 />
+    <App85 />
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function

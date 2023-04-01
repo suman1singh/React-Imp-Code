@@ -1,23 +1,26 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import Child85 from "./Child85";
 
 export default function App85() {
-  const [add, setAdd] = useState(0);
-  const [count, setCount] = useState(10);
-  const Learning = React.useCallback(() => {
-    //some operation
-  }, [count]);
+  const [data, setData] = useState(10);
+  const [item, setItem] = useState(20);
+ 
+  ////Passing function to child with useCallback
+  var myFunc = useCallback(() => {
+    console.log("Hello Suman");
+  }, [item]);
+
+  //Passing function to child without useCallback
+  // var myFunc = () => {
+  //   console.log("Hello Suman");
+  // };
   return (
     <div>
-      <center>
-        <h1>{add}</h1>
-        <h1>{count}</h1>
-        <Child85 Learning={Learning} count={count} />
-        <button onClick={() => setAdd(add + 1)}>Addition</button>
-        <br />
-        <br />
-        <button onClick={() => setCount(count + 10)}>Change count</button>
-      </center>
+      <Child85 item={item} myFunc={myFunc} />
+      <button onClick={() => setData(data + 50)}>Change data:{data}</button>
+      <br />
+      <br />
+      <button onClick={() => setItem(item + 5)}>Change item:{item}</button>
     </div>
   );
 }
