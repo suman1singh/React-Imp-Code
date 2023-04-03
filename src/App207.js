@@ -17,13 +17,13 @@ export default function App207() {
         placeholder="First Number"
         type="number"
         value={number1}
-        onChange={(e) => setNumber1( e.target.value)}
+        onChange={(e) => setNumber1(e.target.value)}
       />
       <input
         placeholder="Second Number"
         type="number"
         value={number2}
-        onChange={(e) => setNumber2( e.target.value)}
+        onChange={(e) => setNumber2(e.target.value)}
       />
 
       <button onClick={calculateTotal}>Add Two Numbers</button>
