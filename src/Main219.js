@@ -17,7 +17,7 @@ const Main219 = () => {
   function gotoDetails(id) {
     navigate(`/detail/${id}`, { state: { id: id } });
   }
-  
+
   return (
     <div className="container mt-2">
       <div className="row mt-2 ">
