@@ -5,6 +5,7 @@ function Child() {
   return <div>This is children content</div>;
 }
 
+//only children we can use
 function Parent({ children }) {
   return (
     <div>

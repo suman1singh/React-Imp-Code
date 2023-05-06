@@ -36,7 +36,7 @@ export default function App63() {
               <td>Mobile</td>
               <td>operation</td>
             </tr>
-            {data.map((item, i) => (
+            { data && data.map((item, i) => (
               <tr key={i}>
                 <td>{item.id}</td>
                 <td>{item.name}</td>

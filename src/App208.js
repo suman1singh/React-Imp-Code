@@ -1,4 +1,5 @@
 // Fetch data from an API:
+//yaha se start krna hai
 import React from "react";
 const url = "https://jsonplaceholder.typicode.com/users/1";
 /** 
