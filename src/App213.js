@@ -1,5 +1,5 @@
 //Decreasing counter with reset
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function App213() {
   const [state, setState] = useState(10);

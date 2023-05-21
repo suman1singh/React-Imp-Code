@@ -5,7 +5,7 @@ import Child214 from "./Child214";
 export default function App214() {
   const [hide, setHide] = useState(true);
   function myFunc() {
-    setHide(false);
+    setHide(false);  
   }
   return (
     <div>
