@@ -28,3 +28,25 @@ export default function App205() {
     </>
   );
 }
+
+//Another good example
+
+// import React from "react";
+
+// function Child(props) {
+//   const method = props.setData;
+//   return (
+//     <>
+//       <input onChange={(e) => method(e.target.value)} />
+//     </>
+//   );
+// }
+// export default function App() {
+//   const [data, setData] = React.useState("Suman");
+//   return (
+//     <>
+//       <h1>Pass data from parent to child:{data}</h1>
+//       <Child setData={setData} />
+//     </>
+//   );
+// }
