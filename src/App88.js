@@ -1,3 +1,4 @@
+//delete item from list
 import React from "react";
 
 export default function App88() {
