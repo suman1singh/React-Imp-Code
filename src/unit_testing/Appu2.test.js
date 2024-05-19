@@ -8,8 +8,8 @@ jest.mock("./apiu");
 test("form makes a api call with proper params", async () => {
   APIService.getData.mockResolvedValueOnce({ ok: true });
   const { getByLabelText, getByText, debug } = render(<Appu2 />);
-  const inputField = getByLabelText(/Body:/i); //This will search for all elements that have a text node with textContent matching the given TextMatch.
-  const submitBtn = getByText(/Post/i);
+  const inputField = getByLabelText(/Body:/i); //This will search for the label that matches the given TextMatch, then find the element associated with that label.
+  const submitBtn = getByText(/Post/i); //This will search for all elements that have a text node with textContent matching the given TextMatch.
   fireEvent.change(inputField, { target: { value: "sample title" } });
   fireEvent.click(submitBtn);
   debug(submitBtn);
