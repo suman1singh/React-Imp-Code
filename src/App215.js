@@ -20,7 +20,8 @@ export default function App215() {
   );
 }
 
-//Counter using useRef(): In console value will update but it will not update in return
+// Counter using useRef(): In console value will update 
+// but it will not update in return
 // import React, { useRef } from "react";
 
 export default function App215() {

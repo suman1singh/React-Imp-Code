@@ -40,7 +40,7 @@ export default function App() {
               <h5>Vegetables</h5>
             </tr>
             {data.map((e, id) =>
-              e.category == "Fruits" ? (
+              e.category !== "Fruits" ? (
                 <tr style={{ border: "solid" }} key={id}>
                   <td style={{ border: "solid" }}>{e.name}</td>
                   <td>{e.price}</td>
