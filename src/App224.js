@@ -1,7 +1,6 @@
-import "./styles.css";
 import React from "react";
 
-export default function App() {
+export default function App224() {
   const mockData = [
     { id: 0, item: "Bed Original" },
     { id: 1, item: "Bed" },
