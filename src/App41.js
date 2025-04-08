@@ -1,4 +1,8 @@
-import React, { useState, useMemo} from "react";
+//useMemo is a React Hook that memorizes the result of a function so it doesn’t get
+// re-executed on every render unless its dependencies change.
+//👉 It’s mostly used to avoid expensive calculations or prevent unnecessary re-renders.
+
+import React, { useState, useMemo } from "react";
 
 export default function App41() {
   const [count, setCount] = useState(5);
@@ -10,7 +14,7 @@ export default function App41() {
     return count * 10;
   }, [count]);
 
-  // getting value without useMemo
+  //getting value without useMemo
   // var multiCount = function () {
   //   console.log("multicount called");
   //   return count * 10;

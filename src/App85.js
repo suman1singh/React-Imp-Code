@@ -1,11 +1,13 @@
 //useCallback hook in ReactJS
+//useCallback is a React Hook that returns a memoized version of a function,
+// so that the function doesn’t get re-created on every render unless its dependencies change.
 import React, { useCallback, useState } from "react";
 import Child85 from "./Child85";
 
 export default function App85() {
   const [data, setData] = useState(10);
   const [item, setItem] = useState(20);
- 
+
   ////Passing function into child with useCallback
   var myFunc = useCallback(() => {
     console.log("Hello Suman");

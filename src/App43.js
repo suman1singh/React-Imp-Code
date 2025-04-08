@@ -1,3 +1,16 @@
+//In React, a ref (short for reference) is used to directly access or interact with 
+//DOM elements or React elements
+//Normally in React, we use state and props to control components. But sometimes we need to:
+//Focus an input
+//Trigger animations
+//Read or modify DOM values
+//Integrate with non-React libraries (e.g., chart.js, D3)
+
+//Common use cases:
+//1. DOM manipulation: focus, scroll, measurements
+//2. Persisting values: store values across renders without causing re-renders
+//3. Integrating with third-party libraries
+
 import React, { useRef } from "react";
 
 export default function App43() {
