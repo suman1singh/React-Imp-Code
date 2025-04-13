@@ -1,1 +1,10 @@
-need to start from App86 
+need to start from App63
+
+
+Important React question
+1. useRef
+2. useMemo, useCallback
+3. useReducers
+4. custom hooks
+6. get and post api call
+7. App65_1 (all api calls)

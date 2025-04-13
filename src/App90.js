@@ -4,9 +4,13 @@ import { saveTaskToRedux } from "./redux/reducer";
 
 export default function App90() {
   const [input, setInput] = useState();
+  
   const statex = useSelector((state) => state);
+
   const dispatch = useDispatch();
+
   console.log("statex-->", statex);
+
   const changeHandler = (e) => {
     setInput(e.target.value);
     console.log(e.target.value);

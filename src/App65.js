@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function App63() {
+export default function App65() {
   const [data, setData] = useState();
 
   useEffect(() => {
@@ -36,18 +36,19 @@ export default function App63() {
               <td>Mobile</td>
               <td>operation</td>
             </tr>
-            { data && data.map((item, i) => (
-              <tr key={i}>
-                <td>{item.id}</td>
-                <td>{item.name}</td>
-                <td>{item.email}</td>
-                <td>{item.mobile}</td>
-                <td>
-                  {" "}
-                  <button onClick={() => deleteUser(item.id)}>delete</button>
-                </td>
-              </tr>
-            ))}
+            {data &&
+              data.map((item, i) => (
+                <tr key={i}>
+                  <td>{item.id}</td>
+                  <td>{item.name}</td>
+                  <td>{item.email}</td>
+                  <td>{item.mobile}</td>
+                  <td>
+                    {" "}
+                    <button onClick={() => deleteUser(item.id)}>delete</button>
+                  </td>
+                </tr>
+              ))}
           </tbody>
         </table>
       </center>

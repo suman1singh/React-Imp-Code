@@ -3,7 +3,7 @@ import "./App87.css";
 import {
   ResponsiveContainer,
   CartesianGrid,
-  LineChart,
+  LineChart, 
   Line,
   XAxis,
   YAxis,

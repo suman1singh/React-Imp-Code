@@ -1,7 +1,7 @@
 //React batching
 import React, { useState, useEffect } from "react";
 
-export default function App() {
+export default function App98() {
   const [name, setName] = useState();
   const [city, setCity] = useState();
 

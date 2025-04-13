@@ -25,6 +25,7 @@ const App230 = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const myerrors = validateForm(formData);
+    console.log("myerrors-->", myerrors);
     if (Object.keys(myerrors).length === 0) {
       console.log(formData);
     } else {
