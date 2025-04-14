@@ -10,6 +10,7 @@ import store from "./redux/store";
 import Test from "./Test";
 import App65 from "./App65";
 import App65_1 from "./App65_1";
+import App65_3 from "./App65_3";
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import "react-toastify/dist/ReactToastify.css";
 
@@ -20,7 +21,7 @@ root.render(
     {/* <App16 /> */}
     {/* <App93 /> */}
     {/* </Provider> */}
-    <App65_1 />
+    <App65_3 />
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
