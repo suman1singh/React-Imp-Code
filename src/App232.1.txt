@@ -100,3 +100,69 @@ and perform asynchronous logic (like API calls).
 calling an API then dispatching a success or error.
 
 see example in App233.js for Redux thunk implementation
+
+**************************************React 19 **************************************
+React 19 features:
+1. useFormStatus: useFormStatus is a Hook that gives you status information 
+                  of the last form submission.
+
+//const { pending, data, method, action } = useFormStatus();
+
+import { useFormStatus } from "react-dom";
+import action from './actions';
+
+function Submit() {
+  const status = useFormStatus();
+  return <button disabled={status.pending}>Submit</button>
+}
+
+export default function App() {
+  return (
+    <form action={action}>
+      <Submit />
+    </form>
+  );
+}
+
+2. useFormState:
+-->Helps manage loading and status for forms using server actions.
+-->Track pending state and errors without custom state.
+-->Keep track of form submission results (like success or error messages).
+-->Manage form state across submissions (especially useful with Server Actions).
+
+import { useFormState } from 'react-dom';
+import { signUpUser } from './actions';
+
+const initialState = { success: false, message: '' };
+
+export default function SignUpForm() {
+  const [state, formAction] = useFormState(signUpUser, initialState);
+
+  return (
+    <form action={formAction}>
+      <input type="email" name="email" placeholder="Email" required />
+      <br />
+      <input type="password" name="password" placeholder="Password" required />
+      <br />
+      <button type="submit">Sign Up</button>
+
+      {/* 🔥 Show server response message */}
+      {state.message && (
+        <p style={{ color: state.success ? 'green' : 'red' }}>
+          {state.message}
+        </p>
+      )}
+    </form>
+  );
+}
+
+3. React Compiler (Preview):
+-->Automatically optimizes performance.
+-->Removes the need for memoization (like useMemo, useCallback in many cases).
+-->React Compiler (in preview with React 19) automatically memoizes functions 
+   and values by analyzing your code during build time.
+-->So, in many cases:
+   You don’t need to manually write useMemo or useCallback to avoid 
+   unnecessary re-renders or re-calculations.
+
+4. Enables sending less JS to the client = better performance.
