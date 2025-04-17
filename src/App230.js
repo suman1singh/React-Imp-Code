@@ -11,7 +11,8 @@ const App230 = () => {
   const [errors, setErrors] = useState({});
 
   const handleInputChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleNextStep = () => {

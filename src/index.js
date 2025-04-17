@@ -6,11 +6,13 @@ import Appu2 from "./unit_testing/Appu2";
 import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import store from "./redux/store";
+//import store from "./redux/store";
 import Test from "./Test";
 import App65 from "./App65";
 import App65_1 from "./App65_1";
 import App65_3 from "./App65_3";
+import App233 from "./App233";
+import store from "./redux_middleware/store";
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import "react-toastify/dist/ReactToastify.css";
 
@@ -21,7 +23,10 @@ root.render(
     {/* <App16 /> */}
     {/* <App93 /> */}
     {/* </Provider> */}
-    <App65_3 />
+    {/*Redux thunk*/}
+    <Provider store={store}>
+      <App233 />
+    </Provider>
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function

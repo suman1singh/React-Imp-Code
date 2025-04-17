@@ -78,3 +78,25 @@ Enables streaming LLM responses
 Efficient for long-running interactions
 
 Keeps the connection open, reducing latency
+
+***************************Middleware in Reactjs ***************************
+🧠 What is Middleware (in general)?
+Middleware is code that runs between two steps in a process. 
+Think of it like a gatekeeper — it can inspect, modify, or stop 
+things before passing them along.
+
+-->Redux Middleware (most common in React)
+If you're using Redux for state management, middleware is used to 
+intercept actions before they reach the reducers.
+
+-->Redux Thunk and Redux Saga are both middleware libraries for handling 
+asynchronous actions in Redux.
+
+-->Redux Thunk is a middleware that allows action creators to return functions 
+instead of action objects. The returned function can dispatch multiple actions 
+and perform asynchronous logic (like API calls).
+
+-->usage of redux-thunk: You want to dispatch async actions, e.g., 
+calling an API then dispatching a success or error.
+
+see example in App233.js for Redux thunk implementation
