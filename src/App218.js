@@ -27,10 +27,33 @@ export default function App218() {
   });
   return (
     <div>
-      <h1>
-        Converting multiple useState to single useReducer hook to improve code
-        quality
-      </h1>
+      <p>Name:{state.name}</p>
+      <p>Name:{state.age}</p>
+      <p>Name:{state.email}</p>
+      <input
+        onChange={(e) => dispatch({ type: "setName", payload: e.target.value })}
+        type="text"
+        placeholder="Enter Name"
+        value={state.name}
+      />
+      <br />
+      <br />
+      <input
+        onChange={(e) => dispatch({ type: "setAge", payload: e.target.value })}
+        type="number"
+        placeholder="Enter Age"
+        value={state.age}
+      />
+      <br />
+      <br />
+      <input
+        onChange={(e) => dispatch({ type: "setEmail", payload: e.target.value })}
+        type="text"
+        placeholder="Enter Email"
+        value={state.email}
+      />
+      <br />
+      <br />
     </div>
   );
 }

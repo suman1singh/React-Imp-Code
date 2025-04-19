@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 export default function App224() {
   const mockData = [
@@ -23,6 +23,8 @@ export default function App224() {
   const [search, setSearch] = React.useState("");
   const [item, setItem] = React.useState("");
 
+  const debounceRef = useRef(null); // Reference to hold the timeout ID
+
   let searchedItem = itemData.filter((e) => {
     if (e.toLowerCase().includes(search.toLowerCase())) {
       return e;
@@ -30,7 +32,13 @@ export default function App224() {
   });
 
   React.useEffect(() => {
-    setList(searchedItem);
+    if (debounceRef.current) {
+      clearTimeout(debounceRef.current);
+    }
+    debounceRef.current = setTimeout(() => {
+      setList(searchedItem);
+    }, 300); // Delay of 300ms
+    return () => clearTimeout(debounceRef.current); // Clean up on unmount or re-render
   }, [search]);
 
   const handleD = (i) => {
@@ -39,10 +47,23 @@ export default function App224() {
     setList(deleD);
   };
 
+  const throttle = (callback, delay) => {
+    return () => {
+      callback();
+      document.getElementById("delete-button").disabled = true;
+      setTimeout(() => {
+        document.getElementById("delete-button").disabled = false;
+      }, delay);
+    };
+  };
+
   const handleAdd = () => {
     setList((e) => [...e, item]);
+    setItem("");
   };
-  
+
+  const throttleAdd = throttle(handleAdd, 1000);
+
   return (
     <center>
       <p>Searched item:{search}</p>
@@ -63,7 +84,9 @@ export default function App224() {
         onChange={(e) => setItem(e.target.value)}
       />
       <br /> <br />
-      <button onClick={handleAdd}>add data</button>
+      <button id="delete-button" onClick={throttleAdd}>
+        add data
+      </button>
       <br /> <br />
       {list.map((e, i) => (
         <li key={i}>
