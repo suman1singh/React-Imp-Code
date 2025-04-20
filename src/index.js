@@ -16,6 +16,7 @@ import store from "./redux_middleware/store";
 import App224 from "./App224";
 import App233 from "./App233";
 import App218 from "./App218";
+import App235 from "./App235";
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import "react-toastify/dist/ReactToastify.css";
 
@@ -24,12 +25,12 @@ root.render(
   <React.StrictMode>
     {/* <Provider store={store}> */}
     {/* <App16 /> */}
-    {/* <App234 /> */}
+    <App235 />
     {/* </Provider> */}
     {/*Redux thunk*/}
-    <Provider store={store}>
+    {/* <Provider store={store}>
       <App218 />
-    </Provider>
+    </Provider> */}
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
