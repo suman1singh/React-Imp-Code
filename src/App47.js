@@ -1,3 +1,5 @@
+//A Higher-Order Component (HOC) in React is basically a function that
+//takes a component and returns a new component. It’s a pattern used for reusing component logic.
 import React, { useState } from "react";
 
 export default function App47() {

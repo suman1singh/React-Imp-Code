@@ -2,9 +2,11 @@ need to start from App217--
 
 
 Important React question
-1. useRef
-2. useMemo, useCallback
-3. useReducers
-4. custom hooks
-6. get and post api call
+1. useRef =1
+2. useMemo, useCallback, memo =1
+3. useReducers =1
+4. custom hooks =1
+6. get and post api call ,login auth = 1
 7. App65_1 (all api calls)
+8. Interceptors =1
+9. HOC = 1

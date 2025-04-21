@@ -16,7 +16,7 @@ import React, { useRef } from "react";
 export default function App43() {
   const InputRef = useRef();
   function handleInput() {
-    console.log("function call");
+    console.log("function call:",InputRef.current);
     InputRef.current.value = "1000";
     // InputRef.current.style.backgroundColor="red";
     InputRef.current.style.marginTop = "20px";

@@ -1,4 +1,4 @@
-//useReducer hooks
+//useReducer hooks:
 //useReducer is a hook that provides an alternative to useState for managing state,
 //particularly when dealing with complex state logic. It's similar to the concept of
 //reducers in Redux. useReducer takes a reducer function, an initial state, and an

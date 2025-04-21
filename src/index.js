@@ -17,6 +17,10 @@ import App224 from "./App224";
 import App233 from "./App233";
 import App218 from "./App218";
 import App235 from "./App235";
+import App43 from "./App43";
+import App41 from "./App41";
+import App85 from "./App85";
+import App47 from "./App47";
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import "react-toastify/dist/ReactToastify.css";
 
@@ -25,7 +29,7 @@ root.render(
   <React.StrictMode>
     {/* <Provider store={store}> */}
     {/* <App16 /> */}
-    <App235 />
+    <App47 />
     {/* </Provider> */}
     {/*Redux thunk*/}
     {/* <Provider store={store}>
