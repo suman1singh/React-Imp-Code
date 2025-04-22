@@ -1,0 +1,38 @@
+🔹 What is Unit Testing?
+Unit testing is the process of testing individual units 
+(or components) of your application in isolation to ensure 
+they function as expected. It focuses on testing small pieces 
+of your code, like functions or React components, and verifying 
+that each one behaves correctly.
+
+🔹 Unit Testing in React
+In React, unit testing typically involves testing individual components 
+and functions to ensure they render and behave as expected.
+
+The two main tools used for unit testing React components are:
+
+1. Jest: A JavaScript testing framework developed by Facebook. It provides 
+test runners, assertion libraries, and mocking capabilities out of the box.
+
+2. React Testing Library: A library for testing React components. It encourages 
+testing your components the way users interact with them (by clicking buttons, 
+typing in inputs, etc.).
+
+🔹 Why Unit Testing in React?
+1. Catch Bugs Early: By testing components in isolation, you catch errors before
+ they spread.
+
+2. Improve Code Confidence: Ensure that your components behave as expected even 
+as your codebase grows.
+
+3. Easy Refactoring: If you need to refactor code, existing tests will help 
+ensure you didn’t break anything.
+
+4. Documentation: Tests can serve as living documentation of your code’s behavior.
+
+🔹 Basic Structure of Unit Tests in React
+A typical unit test involves:
+
+1. Rendering the component
+2. Simulating user interactions (clicks, input changes, etc.)
+3. Making assertions to verify the output or behavior

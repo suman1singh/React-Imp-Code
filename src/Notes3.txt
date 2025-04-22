@@ -1,0 +1,17 @@
+Non technical question answer for switch
+
+1. Roles and Responsibility:
+
+"I worked with an Agile development team to build frontend features based on 
+client business requirements. In addition to my development tasks, 
+I mentored junior team members, assigned tasks, provided guidance and queries and support, and 
+reviewed and merged their code. I was also involved in the entire product 
+lifecycle, from concept and design to development, testing, release.
+
+Occasionally, I created documentation for release notes, deployment details, 
+and project updates on Confluence."
+
+2. What challenges I faced?
+In my last project, I led a team of 5 developers for the React Flow module, which was my 
+first experience in a leadership role. Managing my own tasks while leading the team was a
+bit challenging, but this opportunity pushed me to improve my productivity and enhance my potential.
