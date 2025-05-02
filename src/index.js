@@ -28,13 +28,18 @@ import App214 from "./App214";
 import App239 from "./App239";
 // import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 // import "react-toastify/dist/ReactToastify.css";
+import { Amplify } from "aws-amplify";
+import awsConfig from "./aws/aws-exports";
+//import App240 from "./App240";
+
+//Amplify.configure(awsConfig);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <Provider store={store}> */}
     {/* <App16 /> */}
-    <App239 />
+    <App235 />
     {/* </Provider> */}
     {/*Redux thunk*/}
     {/* <Provider store={store}>
